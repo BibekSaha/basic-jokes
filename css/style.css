@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Gotham Rounded";
+    src: url("../fonts/gotham-rounded.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Gotham Rounded";
+    max-height: 100vh;
+    background-color: #352961;
+}
+
+div.joke {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 41vh;
+    text-align: center;
+    word-wrap: wrap;
+    color: #f6e5e5;
+    font-size: 2em;
+    padding: 30px;
+    background-color:#774181;
+    border: 10px #e6b2c6 solid;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+    div.joke {
+        font-size: 1.2em;
+        margin-top: 15vh;
+    }
+}
