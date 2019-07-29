@@ -1,5 +1,4 @@
 const jokesDiv = document.querySelector(".joke");
-let i = 0;
 
 const grabJokes = async () => {
     const jokeResponse = await fetch("https://geek-jokes.sameerkumar.website/api");
