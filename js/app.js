@@ -15,7 +15,11 @@ const getJokes = () => {
     grabJokes()
     .then(joke => {
         jokesDiv.innerHTML = joke;
-    });
+    })
+    .catch(() => {
+        jokesDiv.style.borderColor = "crimson";
+        jokesDiv.textContent = "Problem commencting to the server";
+    })
 }
 
 getJokes();
