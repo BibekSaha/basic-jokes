@@ -22,6 +22,6 @@ const getJokes = () => {
     })
 }
 
-getJokes();
+window.onload = getJokes();
 
 setInterval(getJokes, 10000);
